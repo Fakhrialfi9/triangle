@@ -1,0 +1,168 @@
+.Navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    padding: 1rem 0;
+    border-bottom: 0.15rem solid var(--bg-color);
+    background-color: var(--white-color);
+}
+
+.NavbarContent {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: auto;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.NavbarContentLeft {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    max-width: auto;
+    height: auto;
+    max-height: auto;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.NavbarContentLeft h5 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--dark-color);
+}
+
+.NavbarContentRight {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    max-width: 50%;
+    height: auto;
+    max-height: auto;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+    gap: 2rem;
+}
+
+.InputSearchContainer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    max-width: 40%;
+    height: auto;
+    max-height: auto;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.InputSearch {
+    width: 100%;
+    height: auto;
+    font-size: 0.85rem;
+    line-height: 0;
+    background-color: transparent;
+    border: 0.15rem solid var(--bg-color);
+    border-radius: 50rem;
+    padding: 0.5rem 0 0.5rem 2.25rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.InputSearch::placeholder {
+    font-size: 0.85rem;
+    color: var(--grey-color);
+}
+
+.InputSearch:focus {
+    outline: none;
+    background-color: #fff;
+    border: 0.5 solid #0c64a2;
+}
+
+.IconInputSearch {
+    width: 0.85rem;
+    position: absolute;
+    left: 1rem;
+    fill: var(--grey-color);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.IconNotificationContent {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    max-width: auto;
+    height: auto;
+    max-height: auto;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 1.25rem;
+}
+
+.IconNotificationBadge {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 1.5rem;
+    max-width: 1.5rem;
+    height: 1.5rem;
+    max-height: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.IconNotificationBadge svg {
+    width: 1.5rem;
+    max-width: 1.5rem;
+    fill: var(--grey-color);
+    transition: all 0.2s ease-in-out;
+}
+
+.IconNotificationBadge svg:hover {
+    fill: var(--secondary-color);
+    cursor: pointer;
+}
+
+.IconNotificationBadge svg:active {
+    transform: scale(0.95);
+}
+
+.badge {
+    position: absolute;
+    top: -0.1rem;
+    right: -0.1rem;
+    width: 0.65rem;
+    height: 0.65rem;
+    background-color: red;
+    border-radius: 50%;
+    border: 0.1rem solid var(--white-color);
+}

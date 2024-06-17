@@ -1,0 +1,322 @@
+.Sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    padding: 0;
+    border-right: 0.15rem solid var(--bg-color);
+}
+
+.SidebarContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.SidebarContentTop {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: auto;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    margin: 0 auto;
+    padding: 0;
+    gap: 2.5rem;
+}
+
+.LogoContentSidebar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: auto;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.LogoContentSidebar img {
+    width: 55%;
+}
+
+.NavigationContentSidebar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: auto;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    margin: 0 auto;
+    padding: 0;
+    gap: 0.55rem;
+}
+
+.NavigationContentSidebar ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: auto;
+    margin: 0;
+    padding: 0;
+    gap: 0.25rem;
+}
+
+.NavigationContentSidebar h6 {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    max-width: auto;
+    height: auto;
+    max-height: auto;
+    padding: 0 0.65rem;
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: var(--darkgrey-color);
+    margin-top: 0.75rem;
+}
+
+.NavigationContentSidebar li {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    max-width: auto;
+    height: auto;
+    max-height: auto;
+    margin: 0;
+    gap: 0.65rem;
+    padding: 0.65rem;
+    color: var(--darkgrey-color);
+    fill: var(--darkgrey-color);
+    cursor: pointer;
+}
+
+.NavigationContentSidebar li:hover {
+    color: var(--secondary-color) !important;
+    fill: var(--secondary-color) !important;
+    background-color: var(--light-color) !important;
+    border-radius: 1rem;
+}
+
+.NavigationContentSidebar a {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: inherit;
+}
+
+.NavigationContentSidebar svg {
+    width: 0.9rem;
+    max-width: 0.9rem;
+    fill: inherit;
+}
+
+.SidebarContentBottom {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    padding: 0;
+    gap: 1.5rem;
+}
+
+.UpdateNotificationContent {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 90%;
+    height: auto;
+    max-height: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    padding: 0.5rem 0.5rem;
+    background-color: var(--white-color);
+    border: 0.15rem solid var(--bg-color);
+    border-radius: var(--border-radius-lg);
+    gap: 1rem;
+}
+
+.IconNotificationUpdateContent {
+    display: flex;
+    flex-direction: column;
+    width: 2.25rem;
+    max-width: 2.25rem;
+    height: 2.25rem;
+    max-height: 2.25rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: var(--dark-color);
+}
+
+.IconNotificationUpdateContent svg {
+    width: 2rem;
+    fill: var(--white-color);
+    animation: rotate 2s linear infinite; /* Adjust duration and timing function as needed */
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.TextNotificationUpdateContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.TextNotificationUpdateContent h6 {
+    font-size: 0.75rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.ButtonNotificationUpdateContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.ButtonNotificationUpdateContent button {
+    width: 100%;
+}
+
+.ProfileUserContent {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    max-width: 90%;
+    height: auto;
+    max-height: auto;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border-radius: var(--border-radius-lg);
+    gap: 1rem;
+}
+
+.AvatarProfileUserContent {
+    display: flex;
+    flex-direction: row;
+    width: 1.5rem;
+    max-width: 1.5rem;
+    height: 1.5rem;
+    max-height: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: var(--dark-color);
+}
+
+.AvatarProfileUserContent svg {
+    width: 1rem;
+    fill: var(--white-color);
+}
+
+.BiographyProfileUserContent {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    max-width: auto;
+    height: auto;
+    max-height: auto;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+    gap: 0.25rem;
+}
+
+.BiographyProfileUserContent h6 {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--dark-color);
+    line-height: 1 !important;
+    margin: 0;
+}
+
+.BiographyProfileUserContent p {
+    font-size: 0.5rem;
+    font-weight: 300;
+    color: var(--dark-color);
+    line-height: 1 !important;
+    margin: 0;
+}
+
+.MoreOptionProfileUserContent {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    max-width: auto;
+    height: auto;
+    max-height: auto;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    margin-left: auto;
+    padding: 0;
+}
+
+.MoreOptionProfileUserContent svg {
+    width: 0.85rem;
+    fill: var(--dark-color);
+}

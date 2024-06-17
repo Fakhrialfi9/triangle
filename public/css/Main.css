@@ -1,0 +1,515 @@
+.Main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    min-height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.MainSidebar {
+    position: fixed;
+    top: 0 !important;
+    left: 0 !important;
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+    max-width: 15vw;
+    height: 100vh;
+    max-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: auto;
+    padding: 0;
+    animation: slideIn 0.5s forwards;
+}
+
+.MainDashboard {
+    display: flex;
+    flex-direction: column;
+    width: 85vw;
+    max-width: 85vw;
+    height: auto;
+    max-height: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: auto;
+    padding: 0;
+}
+
+.MainNavbar {
+    display: flex;
+    flex-direction: column;
+    width: 85vw;
+    max-width: 85vw;
+    height: auto;
+    max-height: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: auto;
+    padding: 0;
+}
+.MainPages {
+    display: flex;
+    flex-direction: column;
+    width: 85vw;
+    max-width: 85vw;
+    height: auto;
+    max-height: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: auto;
+    padding: 3.5rem 0;
+}
+
+.DashboardContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    padding: 0;
+    gap: 1rem;
+}
+
+.DashboardContentTop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: auto;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    padding: 0;
+    gap: 1rem;
+}
+
+.DashboardContentTop > * {
+    flex: 1 1 calc(25% - 1rem);
+    box-sizing: border-box;
+}
+
+.BoxNumberChart {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 25%;
+    max-width: 25%;
+    height: auto;
+    max-height: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    padding: 0.85rem;
+    border-radius: var(--border-radius-lg);
+    border: 0.1rem solid var(--bg-color);
+    gap: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.BoxNumberChart:hover {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.BoxNumberChartTopContent {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: auto;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.BoxNumberChartTopContent h5 {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--grey-color);
+}
+
+.BoxNumberChartTopContent a,
+svg {
+    margin: 0;
+    line-height: 0;
+    width: 0.85rem;
+    fill: var(--grey-color);
+}
+
+.BoxNumberChartBottomContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: auto;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+}
+
+.BoxNumberChartBottomContent h3 {
+    font-size: 1.45rem;
+    font-weight: 500;
+    color: var(--dark-color);
+}
+
+.BoxNumberChartBottomContent h5 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: auto;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--grey-color);
+    gap: 0.5rem;
+}
+
+.BoxNumberChartBottomContent span {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    max-width: auto;
+    height: auto;
+    max-height: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+    color: var(--success-color);
+    gap: 0.25rem;
+}
+
+.BoxNumberChartBottomContent svg {
+    width: 0.8rem;
+    max-width: 0.8rem;
+    fill: var(--success-color);
+}
+
+.DashboardContentCenter {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: auto;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    padding: 0;
+    gap: 1rem;
+}
+
+.BoxOrderChart {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 60%;
+    max-width: 60%;
+    height: auto;
+    max-height: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    padding: 0.85rem;
+    border-radius: var(--border-radius-lg);
+    border: 0.1rem solid var(--bg-color);
+    gap: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.BoxOrderChart:hover {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.BoxOrderChartTopContent {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: auto;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.HeaderChart {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    max-width: auto;
+    height: auto;
+    max-height: auto;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.HeaderChart h5 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+.CurrentDateChart {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    max-width: auto;
+    height: auto;
+    max-height: auto;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+    gap: 0.5rem;
+}
+
+.CurrentDateChart {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    max-width: auto;
+    height: auto;
+    max-height: auto;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.diver-vertical {
+    width: 0.01rem;
+    min-width: 0.01rem;
+    height: 100%;
+    min-height: 0.85rem;
+    border: 0.0001rem solid var(--bg-color);
+    opacity: 0.5;
+}
+
+.CurrentDateChart li {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--grey-color);
+    position: relative;
+    padding-left: 0.85rem;
+}
+
+.CurrentDateChart li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0.4rem;
+    height: 0.4rem;
+    background-color: var(--grey-color);
+    border-radius: 50%;
+}
+
+.BoxOrderChartBottomContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.BoxLeadsChart {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 40%;
+    max-width: 40%;
+    height: auto;
+    max-height: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    padding: 0.85rem;
+    border-radius: var(--border-radius-lg);
+    border: 0.1rem solid var(--bg-color);
+    gap: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.BoxLeadsChart:hover {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.DashboardContentBottom {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    padding: 0.85rem;
+    border-radius: var(--border-radius-lg);
+    border: 0.1rem solid var(--bg-color);
+    gap: 1rem;
+}
+
+.TableGenerateBoxContentTop {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: auto;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    padding: 0;
+    fill: var(--white-color);
+}
+
+.TableGenerateBoxContentTop h5 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+.TableGenerateBoxContentTop svg {
+    width: 0.5rem !important;
+    fill: inherit;
+}
+
+.TableGenerateBoxContentTop button:hover {
+    fill: var(--secondary-color) !important;
+}
+
+.TableGenerateBoxContentBottom {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.TableGenerateBoxContentBottom table {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: auto;
+    margin: 0 auto;
+    font-size: 0.8rem;
+    border-collapse: collapse;
+    table-layout: auto;
+}
+
+.TableGenerateBoxContentBottom thead {
+    color: var(--dark-color);
+    text-align: left;
+    font-size: inherit;
+    font-weight: 300;
+    margin: 0 auto;
+}
+
+.TableGenerateBoxContentBottom th {
+    font-weight: 500 !important;
+    font-family: var(--font-family-sans);
+    text-align: left;
+    font-size: inherit;
+    margin: 0;
+    padding: 0.85rem;
+    border-bottom: 0.05rem solid var(--grey-color);
+}
+
+.TableGenerateBoxContentBottom tbody {
+    color: var(--dark-color);
+    text-align: left;
+    font-size: inherit;
+    font-weight: 300;
+    margin: 0 auto;
+}
+
+.TableGenerateBoxContentBottom td,
+.TableGenerateBoxContentBottom th {
+    font-family: var(--font-family-sans);
+    font-size: inherit;
+    margin: 0 auto;
+    padding: 0.85rem;
+    border-bottom: 0.05rem solid var(--grey-color);
+}
+
+.TableGenerateBoxContentBottom tbody tr:last-of-type td {
+    border-bottom: none;
+}
+
+/* .TableGenerateBoxContentBottom td:nth-child(n + 6),
+.TableGenerateBoxContentBottom th:nth-child(n + 6) {
+    text-align: center;
+} */

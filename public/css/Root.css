@@ -1,0 +1,232 @@
+:root {
+    /* Start Color */
+    --primary-color: #f9faf5;
+    --secondary-color: #4e4ff4;
+
+    --bg-color: #f0f1f4;
+
+    --black-color: #000000;
+    --white-color: #ffffff;
+
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #17a2b8;
+
+    --light-color: #f8f9fa;
+    --dark-color: #020202;
+    --grey-color: #a1a8b4;
+    --darkgrey-color: #808080;
+    /* End Color */
+
+    /* Start Font Family */
+    --font-family-sans: "Poppins", sans-serif;
+    /* End Font Family */
+
+    /* Start Sizing */
+    --font-size-base: 16px;
+    --font-size-lg: 1.25rem;
+    --font-size-md: 1rem;
+    --font-size-sm: 0.875rem;
+    --font-size-xs: 0.75rem;
+
+    --border-radius: 0.5rem;
+    --border-radius-sm: 0.25rem;
+    --border-radius-md: 0.5rem;
+    --border-radius-lg: 1rem;
+    --border-radius-xl: 1.5rem;
+    --border-radius-2xl: 2rem;
+
+    --spacing-unit: 1.25rem;
+    --spacing-unit-sm: 0.5rem;
+    --spacing-unit-md: 1.5rem;
+    --spacing-unit-lg: 2rem;
+
+    --container-sm: 640px;
+    --container-md: 768px;
+    --container-lg: 1024px;
+    --container-xl: 1280px;
+    --container-2xl: 1536px;
+    /* Start Sizing */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html body {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    min-height: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    padding: 0;
+    background-color: var(--white-color);
+    user-select: none;
+}
+
+/* Start Change Default Ul & Li */
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    font-weight: normal;
+    color: #333;
+    font-family: var(--font-family-sans);
+}
+/* End Change Default Ul & Li */
+
+/* Start Heading */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-family-sans);
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.75rem;
+}
+h4 {
+    font-size: 1.5rem;
+}
+h5 {
+    font-size: 1.25rem;
+}
+h6 {
+    font-size: 1rem;
+}
+
+/* End Heading */
+
+/* Start Links & Paragraf */
+a {
+    font-family: var(--font-family-sans);
+    color: var(--darkgrey-color);
+    text-decoration: none !important;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    font-family: var(--font-family-sans);
+    text-decoration: none !important;
+}
+/* End Links & Paragraf */
+
+/* Start Button */
+button {
+    display: inline-block;
+    width: auto;
+    max-width: auto;
+    height: auto;
+    max-height: auto;
+    font-family: var(--font-family-sans);
+    font-size: var(--font-size-base);
+    font-weight: 400;
+    color: #fff;
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius);
+    border: 0.05rem solid transparent;
+    padding: 0.5rem 1rem;
+    cursor: pointer !important;
+    text-align: center;
+    vertical-align: middle;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: transparent;
+    border: 0.05rem solid var(--secondary-color);
+    color: var(--secondary-color);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    cursor: pointer !important;
+}
+
+button:active {
+    transform: scale(0.95);
+    cursor: pointer !important;
+}
+/* Start Button */
+
+/* Start Forms */
+input,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: var(--font-size-base);
+    font-family: var(--font-family-sans);
+    border: 1px solid #ced4da;
+    border-radius: var(--border-radius);
+    margin-bottom: var(--spacing-unit);
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+/* Start Forms */
+
+/* Start Table */
+
+/* table {
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+    max-height: auto;
+    margin: 0 auto;
+    font-size: 0.8rem;
+    background-color: transparent;
+    table-layout: fixed;
+    border-collapse: collapse;
+    font-family: var(--font-family-sans);
+}
+
+thead tr {
+    color: var(--dark-color);
+    text-align: left;
+    font-size: inherit;
+    font-weight: 300;
+    font-family: var(--font-family-sans);
+}
+
+tbody tr {
+    color: var(--dark-color);
+    text-align: left;
+    font-size: inherit;
+    font-weight: 300;
+    font-family: var(--font-family-sans);
+}
+
+th,
+td {
+    padding: 1rem;
+    font-family: var(--font-family-sans);
+} */
+
+/* End Table */
